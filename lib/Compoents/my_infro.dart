@@ -1,5 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:portfolio_shine/Compoents/profile.dart';
+
 
 import '../Constraints/color_constriants.dart';
 class MyInfro extends StatelessWidget {
@@ -16,20 +18,17 @@ class MyInfro extends StatelessWidget {
         ,child:  Column(
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children:  [
-          Spacer(flex: 2,),
-
-           const CircleAvatar(
-            radius: 50,
-            backgroundImage: AssetImage("assets/profile.jpg"),
-          ),
+          const Spacer(flex: 2,),
+          const Profile(),
           Text("Shine Wai Yan Aung",
             style: label,),
           Text("I am an flutter developer",
             style: subLabel
             ),
-          Spacer(flex: 2,),
+          const Spacer(flex: 2,),
 
         ],),),
     );
   }
 }
+

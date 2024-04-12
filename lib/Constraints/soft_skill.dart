@@ -19,11 +19,7 @@ class SoftSkills extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.symmetric(vertical: defaultPadding),
           child: Text("Soft Skills",
-            style: GoogleFonts.frankRuhlLibre(
-              fontSize: 15,
-              fontWeight : FontWeight.w500,
-              color : TextColor,
-            ),),
+            style: label),
         ),
         LinearprogressIndicator(title: "Collaboration", percent: 0.9),
         LinearprogressIndicator(title: "Time Management", percent: 0.8),

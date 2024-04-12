@@ -14,6 +14,7 @@ class _ScreenState extends State<Screen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       body: Center(
         child: Container(
           constraints: const BoxConstraints(maxWidth: maxWdith),

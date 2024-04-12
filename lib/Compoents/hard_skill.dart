@@ -20,11 +20,7 @@ class Skill extends StatelessWidget {
         Padding(
           padding:EdgeInsets.symmetric(vertical: defaultPadding/2),
           child: Text("Hard Skills",
-            style: GoogleFonts.frankRuhlLibre(
-              fontSize: 15,
-              fontWeight : FontWeight.w500,
-              color : TextColor,
-            ),
+            style: label
           ),
         ),
         //Progress Indicator for skills
