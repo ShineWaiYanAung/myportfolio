@@ -4,18 +4,13 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_shine/Compoents/slide_menu.dart';
 import 'package:portfolio_shine/Constraints/color_constriants.dart';
 
-class Screen extends StatefulWidget {
-  const Screen({super.key});
-
-  @override
-  State<Screen> createState() => _ScreenState();
-}
-
-class _ScreenState extends State<Screen> {
+class Screen extends StatelessWidget {
+  final List<Widget>  children;
+  const Screen({required this.children ,super.key});
 
   @override
   Widget build(BuildContext context) {
-    final scrreenwidht = MediaQuery.of(context).size.width;
+
     return Scaffold(
       appBar: isMobile(context)?  AppBar(
         iconTheme: IconThemeData(color: TextColor),
@@ -38,11 +33,18 @@ class _ScreenState extends State<Screen> {
                 const Expanded(
                 flex: 2,
                 child: SlideMenu()),
+              const SizedBox(width: defaultPadding/2,),
               Expanded(
                 flex: 7,
-                child: Container(
+                child: SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      ...children
+                    ],
+                  ),
 
-                ))
+                )
+                )
             ],
           ),
         ),
