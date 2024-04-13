@@ -1,8 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
 import 'color_constriants.dart';
-import 'dipaloma.dart';
+import 'hero_animation.dart';
 class DipalomaMain extends StatelessWidget {
   const DipalomaMain({
     super.key,
@@ -20,29 +19,11 @@ class DipalomaMain extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: defaultPadding/2),
           child: Text("Diploma & Certificate",style: label,),
         ),
-        const Dipaloma(title: 'Computer Science Foundation Certificate at GUSTO university',),
-        const Dipaloma(title: 'Higher Diploma at GUSTO university',),
-        GestureDetector(
-            onTap: ()=>Navigator.of(context).push(MaterialPageRoute(builder: (context) => Scaffold(
-              appBar: AppBar(
-                backgroundColor: bgColor,
-                title:Text(
-                  'Basic to Im-terminate Flutter Certificate at Let"sLearn Programming',style: label,) ,
-                leading: IconButton(
-                    onPressed: ()=>Navigator.of(context).pop(),
-                    icon: const Icon(Icons.arrow_back_ios,
-                    color: TextColor,)),
-              ),
-                body: Center(
-                  child: Hero(
-                      tag: "Ceti",
-                      child: Image.asset("flutterCeti.png")),
-                ),
-            ),)),
-            child: const Hero(
-                tag: "Ceti",
-                child: Dipaloma(title: 'Basic to Im-terminate Flutter Certificate at Let"sLearn Programming',))),
-      ],
+        Dipaloma_animation(title: "Computer Science Foundation Certificate at GUSTO university", Imagepath: "",tag: "",),
+        Dipaloma_animation(title: "Higher Diploma at GUSTO university", Imagepath: 'profile.jpg',tag: "pro",),
+        Dipaloma_animation(title: 'Basic to Im-terminate Flutter Certificate at Let"sLearn Programming', Imagepath: 'flutterCeti.png',tag: "Ceti",)
+      ]
+      ,
     );
   }
 }

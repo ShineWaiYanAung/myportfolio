@@ -27,7 +27,7 @@ class _SocialInfoState extends State<SocialInfo> {
 }
     return IconButton(
       onPressed: _launchUrl,
-      icon: SvgPicture.asset(path),
+      icon: SvgPicture.asset(widget.path,width: 20,height: 15,),
     );
   }
 }

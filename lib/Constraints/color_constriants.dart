@@ -20,3 +20,7 @@ final subLabel = GoogleFonts.frankRuhlLibre(
                   fontWeight : FontWeight.w500,
                   color : Colors.grey,
                   );
+bool isDesktop(BuildContext context)=>
+    MediaQuery.of(context).size.width >1000;
+bool isMobile(BuildContext context)=>
+    MediaQuery.of(context).size.width <1000;

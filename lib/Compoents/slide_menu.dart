@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:portfolio_shine/Compoents/hard_skill.dart';
 import 'package:portfolio_shine/Constraints/address_infro.dart';
-import 'package:portfolio_shine/Constraints/social_infro.dart';
 import '../Constraints/color_constriants.dart';
 import '../Constraints/cv_downlaod.dart';
 import '../Constraints/dipaloma_main.dart';
+import '../Constraints/parent_socialinfro.dart';
 import '../Constraints/soft_skill.dart';
 import 'my_infro.dart';
 class SlideMenu extends StatelessWidget {
@@ -17,7 +17,7 @@ class SlideMenu extends StatelessWidget {
     return Drawer(
       child: Container(
         color: bgColor,
-        child:    Column(
+        child:    const Column(
           children: [
             MyInfro(),
             Expanded(child:
@@ -32,17 +32,7 @@ class SlideMenu extends StatelessWidget {
                   SoftSkills(),
                   DipalomaMain(),
                   CvDownload(),
-                  Container(
-                    margin: EdgeInsets.all(defaultPadding/2),
-                    color  : Color(0xFF24242E), 
-                    child: const Row(children: [
-                       Spacer(),
-                       SocialInfo(icon: Icon(Icons.facebook),  urlLink: 'https://www.facebook.com/shine.wai.754918/',),
-                       
-   
-                       Spacer(),
-                    ],),
-                  )
+                  ParentSocialInfrro()
 
                    ],
               ),
@@ -53,6 +43,8 @@ class SlideMenu extends StatelessWidget {
     );
   }
 }
+
+
 
 
 
