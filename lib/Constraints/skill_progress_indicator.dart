@@ -27,20 +27,17 @@ class SkillCircularIndicator extends StatelessWidget {
              Center(
                child: Text(
                  (value* 100).toString()+ "%",
-                 style: GoogleFonts.frankRuhlLibre(
-                   color : TextColor
-                 ),
+                 style: subLabel
                ),
              )]
            ),
         ),
         ),
-        Text(title,
-        style: GoogleFonts.frankRuhlLibre(
-         color : TextColor,
-         fontSize : 12,
-         fontWeight : FontWeight.w500
-        ),)
+        Padding(
+          padding: const EdgeInsets.symmetric(vertical: defaultPadding),
+          child: Text(title,
+          style: subLabel),
+        )
       ],
     );
   }

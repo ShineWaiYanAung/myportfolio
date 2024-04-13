@@ -3,6 +3,8 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_shine/Constraints/color_constriants.dart';
 import 'package:portfolio_shine/ScreenPages/screen.dart';
 
+import 'ScreenPages/home_screen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -22,7 +24,7 @@ class MyApp extends StatelessWidget {
         canvasColor: bgColor,
         useMaterial3: true,
       ),
-      home: Screen(),
+      home: const HomeScreen(),
     );
   }
 }
