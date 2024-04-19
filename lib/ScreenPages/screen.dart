@@ -24,29 +24,31 @@ class Screen extends StatelessWidget {
         ),),
       ) : null,
       drawer: isMobile(context) ?  SlideMenu() : null,
-      body: Center(
-        child: Container(
-          constraints: const BoxConstraints(maxWidth: maxWdith),
-          child: Row(
-            children: [
-              if(isDesktop(context))
-                const Expanded(
-                flex: 2,
-                child: SlideMenu()),
-              const SizedBox(width: defaultPadding/2,),
-              Expanded(
-                flex: 7,
-                child: SingleChildScrollView(
-                  child: Column(
-                    children: [
-                      ...children
-                    ],
-                  ),
+      body: Container(
+        constraints: const BoxConstraints(maxWidth: maxWdith),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            if(isDesktop(context))
+              const Expanded(
+              flex: 2,
+              child: SlideMenu()),
+            const SizedBox(width: defaultPadding/2,),
+            Expanded(
 
-                )
-                )
-            ],
-          ),
+              flex:  7,
+              child: SingleChildScrollView(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+
+                  children: [
+                    ...children
+                  ],
+                ),
+
+              )
+              )
+          ],
         ),
       ),
     );
