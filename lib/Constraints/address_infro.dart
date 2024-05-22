@@ -19,13 +19,13 @@ class AddressIntro extends StatelessWidget {
           Text(title,
           style: GoogleFonts.frankRuhlLibre(
             fontSize : 12,
-            fontWeight : FontWeight.w200,
+            fontWeight : FontWeight.w500,
             color : TextColor,
           ),),
           Text(text,
           style: GoogleFonts.frankRuhlLibre(
             fontSize :12,
-            fontWeight : FontWeight.w200,
+            fontWeight : FontWeight.w500,
             color : Colors.grey,
           ),),
         ],

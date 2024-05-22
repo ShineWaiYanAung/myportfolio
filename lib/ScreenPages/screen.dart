@@ -27,7 +27,8 @@ class Screen extends StatelessWidget {
       body: Container(
         constraints: const BoxConstraints(maxWidth: maxWdith),
         child: Row(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             if(isDesktop(context))
               const Expanded(
@@ -35,12 +36,10 @@ class Screen extends StatelessWidget {
               child: SlideMenu()),
             const SizedBox(width: defaultPadding/2,),
             Expanded(
-
               flex:  7,
               child: SingleChildScrollView(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.start,
-
                   children: [
                     ...children
                   ],

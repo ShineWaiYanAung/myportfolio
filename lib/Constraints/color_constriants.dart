@@ -24,8 +24,10 @@ final subLabel = GoogleFonts.frankRuhlLibre(
 
 
 bool isDesktop(BuildContext context)=>
-    MediaQuery.of(context).size.width >1000;
+    MediaQuery.of(context).size.width >1100;
 bool isMobile(BuildContext context)=>
-    MediaQuery.of(context).size.width <1000;
+    MediaQuery.of(context).size.width <1100;
 bool isMobileText(BuildContext context)=>
     MediaQuery.of(context).size.width <645;
+ bool isMobileView(BuildContext context)=>
+    MediaQuery.of(context).size.width <890;

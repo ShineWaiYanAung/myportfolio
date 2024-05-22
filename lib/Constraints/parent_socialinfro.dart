@@ -18,9 +18,9 @@ class ParentSocialInfrro extends StatelessWidget {
       ),
       child: const Row(children: [
         Spacer(),
-        SocialInfo(urlLink: 'https://www.facebook.com/shine.wai.754918/', path: 'facebook.svg',),
-        SocialInfo(urlLink: 'https://github.com/ShineWaiYanAung', path: 'github.svg',),
-        SocialInfo(urlLink: 'https://www.linkedin.com/in/shinewai-yanaung-407b32263/', path: 'linkedin.svg',),
+        SocialInfo(urlLink: 'https://www.facebook.com/shine.wai.754918/', path: 'facebook.svg', wid: 20, hei:15,),
+        SocialInfo(urlLink: 'https://github.com/ShineWaiYanAung', path: 'github.svg',wid: 20, hei:15),
+        SocialInfo(urlLink: 'https://www.linkedin.com/in/shinewai-yanaung-407b32263/', path: 'linkedin.svg',wid: 20, hei:15),
 
 
         Spacer(),

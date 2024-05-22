@@ -17,8 +17,5 @@ List<Project> demo_project = [
       title: "TechConnect",
       description: "A platform aimed at connecting tech enthusiasts and professionals to collaborate on innovative projects and share knowledge."
   ),
-  Project(
-      title: "HealthTracker",
-      description: "A mobile application designed to help users monitor their daily activities, diet, and overall health to promote a healthier lifestyle."
-  ),
+
 ];

@@ -5,11 +5,13 @@ import 'package:url_launcher/url_launcher.dart';
 class SocialInfo extends StatefulWidget {
   final String path;
   final String urlLink;
+  final double wid ;
+  final double hei;
 
   const SocialInfo({
     required this.path,
     required this.urlLink,
-    Key? key, 
+    Key? key, required this.wid, required this.hei,
   }) : super(key: key);
 
   @override
@@ -27,7 +29,7 @@ class _SocialInfoState extends State<SocialInfo> {
 }
     return IconButton(
       onPressed: _launchUrl,
-      icon: SvgPicture.asset(widget.path,width: 20,height: 15,),
+      icon: SvgPicture.asset(widget.path,width: widget.wid,height: widget.hei,),
     );
   }
 }
