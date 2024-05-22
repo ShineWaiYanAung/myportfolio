@@ -17,7 +17,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Screen(children: [
       IntroducationHomeScreen(),
-      isMobileView(context) ? AboutMeMobile() : AboutMeForDeskTop(),
+      isMobileView(context) ? const AboutMeMobile() : AboutMeForDeskTop(),
       //ProjectShower(),
       Column(
         children: [

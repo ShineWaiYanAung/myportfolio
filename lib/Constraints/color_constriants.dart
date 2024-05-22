@@ -4,8 +4,8 @@ import 'package:google_fonts/google_fonts.dart';
 const primarycolor = Color(0xFF7BC9FF);
 const secondaryColor = Color(0xFF242430);
 const TextColor = Color(0xFF8576FF);
-
 const bgColor = Color(0xFF1E1E28);
+const bgColor2 = Colors.white;
 
 const defaultPadding = 20.0;
 const defaultDuration = Duration(seconds: 1);
@@ -24,10 +24,10 @@ final subLabel = GoogleFonts.frankRuhlLibre(
 
 
 bool isDesktop(BuildContext context)=>
-    MediaQuery.of(context).size.width >1100;
+    MediaQuery.of(context).size.width >1300;
 bool isMobile(BuildContext context)=>
-    MediaQuery.of(context).size.width <1100;
+    MediaQuery.of(context).size.width <1300;
 bool isMobileText(BuildContext context)=>
     MediaQuery.of(context).size.width <645;
  bool isMobileView(BuildContext context)=>
-    MediaQuery.of(context).size.width <890;
+    MediaQuery.of(context).size.width <955;

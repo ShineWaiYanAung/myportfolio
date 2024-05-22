@@ -15,7 +15,7 @@ class AboutMeForDeskTop extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Container(
-            width:400,
+            width:500,
             height: 400,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -28,11 +28,14 @@ class AboutMeForDeskTop extends StatelessWidget {
                     color : TextColor,
                   ),),
                 ),
-                  Text("From 2023 to 2025, I attended GUSTO University, "
-                      "\none of the leading private technical universities in Myanmar. "
-                      "\nAdditionally, I studied Flutter courses from Let's Learn Programming Myanmar. "
-                      "\nOver the past year, I have been actively involved in building my own app projects. "
-                      "\nWorking with Flutter has never failed to interest me."
+                Text("From 2023 to 2025, I attended GUSTO University, "
+                    "\none of the leading private technical universities in Myanmar. "
+                    "\nI studied Flutter courses from Let's Learn Programming Myanmar. "
+                    "\nI have coding experiences such as languages such as"
+                    "\nHTML ,CSS ,JAVA, Dart, and FLUTTER"
+                    "\nAmong them,Flutter and Dart are my main coding languages."
+                    "\nOver the past year, I have been actively involved in building my own app projects. "
+                    "\nWorking with Flutter has never failed to interest me."
                     ,textAlign: TextAlign.start,
                     style: GoogleFonts.frankRuhlLibre(
 

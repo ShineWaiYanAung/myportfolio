@@ -25,7 +25,10 @@ class AboutMeMobile extends StatelessWidget {
             ),
             Text("From 2023 to 2025, I attended GUSTO University, "
                 "\none of the leading private technical universities in Myanmar. "
-                "\nAdditionally, I studied Flutter courses from Let's Learn Programming Myanmar. "
+                "\nI studied Flutter courses from Let's Learn Programming Myanmar. "
+                "\nI have coding experiences such as languages such as"
+                "\nHTML ,CSS ,JAVA, Dart, and FLUTTER"
+                "\nAmong them,Flutter and Dart are my main coding languages."
                 "\nOver the past year, I have been actively involved in building my own app projects. "
                 "\nWorking with Flutter has never failed to interest me."
               ,textAlign: TextAlign.center,
@@ -42,8 +45,8 @@ class AboutMeMobile extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.symmetric(vertical: defaultPadding),
           child: Container(
-            width: 400,
-            height: 400,
+            width: 300,
+            height: 300,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(50),
             ),
